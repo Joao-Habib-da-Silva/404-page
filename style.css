@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body {
+    min-height: 100vh;
+    background: linear-gradient(to top,#03045e, #ade8f4);
+    display: grid;
+    place-items: center;
+}
+#container {
+    display: flex;
+}
+#box {
+    text-transform: capitalize;
+
+}
+#box h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: -150px;
+}
+#box button {
+    background-color: #030431;
+    border: none;
+    height: 35px;
+    font-family: sans-serif;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    cursor: pointer;
+    margin-left: 110px;
+    margin-top: 20px;
+    width: 150px;
+    border-radius: 30px;
+    transition: 0.5s ease-in-out;
+}
+#box button:hover {
+    scale: 1.2;
+    transition: 0.5s ease-in-out;
+    box-shadow: 0px 0px 40px #ade8f4;
+    color: #ade8f4;
+}
+#container p {
+    font-size: 10rem;
+    font-weight: 900;
+}
+#moon {
+    width: 10rem;
+    margin-top: 20px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 50px #ade8f4;
+    height: 10rem;
+    background-color: white;
+}
+#left {
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    border-bottom: 10px solid black;
+    border-radius: 50%;
+    margin: 40px;
+}
+#right {
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    border-bottom: 10px solid black;
+    margin-left: 100px;
+    margin-top: -90px;
+    border-radius:50% ;
+
+}
+#mouth {
+    width: 20px;
+    border-radius:50% ;
+    height: 20px;
+    background-color: black;
+    margin-left: 100px;
+    margin-top: 25px;
+    animation-name: mouth;
+    animation-iteration-count: infinite;
+    animation-duration: 1.5s;
+    animation-direction: alternate;
+
+}
+@keyframes mouth {
+    0%{
+        scale: 1;
+    }
+    100% {
+        scale: 1.4;
+    }
+}
